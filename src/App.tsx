@@ -1,26 +1,22 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React from 'react';
+
+import './style.css';
+
+import Child1 from './Child1';
+import Child2 from './Child2';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
+    <div className='app'>
+      <header className='app-header'>
+        Hello Vite + React + Redux!
       </header>
+      <div className='container'>
+        <Child1 />
+        <Child2 />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

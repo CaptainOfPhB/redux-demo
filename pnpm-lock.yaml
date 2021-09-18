@@ -6,12 +6,16 @@ specifiers:
   '@vitejs/plugin-react-refresh': ^1.3.1
   react: ^17.0.0
   react-dom: ^17.0.0
+  react-redux: ^7.2.5
+  redux: ^4.1.1
   typescript: ^4.3.2
   vite: ^2.5.4
 
 dependencies:
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
+  react-redux: registry.nlark.com/react-redux/7.2.5_react-dom@17.0.2+react@17.0.2
+  redux: registry.nlark.com/redux/4.1.1
 
 devDependencies:
   '@types/react': registry.nlark.com/@types/react/17.0.21
@@ -59,6 +63,8 @@ packages:
       json5: registry.nlark.com/json5/2.2.0
       semver: registry.nlark.com/semver/6.3.0
       source-map: registry.nlark.com/source-map/0.5.7
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/generator/7.15.4:
@@ -149,6 +155,8 @@ packages:
       '@babel/template': registry.nlark.com/@babel/template/7.15.4
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.4
       '@babel/types': registry.nlark.com/@babel/types/7.15.6
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/helper-optimise-call-expression/7.15.4:
@@ -177,6 +185,8 @@ packages:
       '@babel/helper-optimise-call-expression': registry.nlark.com/@babel/helper-optimise-call-expression/7.15.4
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.4
       '@babel/types': registry.nlark.com/@babel/types/7.15.6
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/helper-simple-access/7.15.4:
@@ -220,6 +230,8 @@ packages:
       '@babel/template': registry.nlark.com/@babel/template/7.15.4
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.4
       '@babel/types': registry.nlark.com/@babel/types/7.15.6
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/highlight/7.14.5:
@@ -267,6 +279,15 @@ packages:
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
     dev: true
 
+  registry.nlark.com/@babel/runtime/7.15.4:
+    resolution: {integrity: sha1-/RfRa/34eObdAtGXU6OfqKjZyEo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@babel/runtime/download/@babel/runtime-7.15.4.tgz?cache=0&sync_timestamp=1631501911010&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.15.4.tgz}
+    name: '@babel/runtime'
+    version: 7.15.4
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: registry.nlark.com/regenerator-runtime/0.13.9
+    dev: false
+
   registry.nlark.com/@babel/template/7.15.4:
     resolution: {integrity: sha1-UYmNNdzz+qZwxO5q/P1RfuE58ZQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@babel/template/download/@babel/template-7.15.4.tgz}
     name: '@babel/template'
@@ -293,6 +314,8 @@ packages:
       '@babel/types': registry.nlark.com/@babel/types/7.15.6
       debug: registry.nlark.com/debug/4.3.2
       globals: registry.nlark.com/globals/11.12.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/types/7.15.6:
@@ -315,11 +338,19 @@ packages:
       picomatch: registry.nlark.com/picomatch/2.3.0
     dev: true
 
+  registry.nlark.com/@types/hoist-non-react-statics/3.3.1:
+    resolution: {integrity: sha1-ESSq/lEYy1kZd66xzqrtEHDrA58=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/hoist-non-react-statics/download/@types/hoist-non-react-statics-3.3.1.tgz}
+    name: '@types/hoist-non-react-statics'
+    version: 3.3.1
+    dependencies:
+      '@types/react': registry.nlark.com/@types/react/17.0.21
+      hoist-non-react-statics: registry.nlark.com/hoist-non-react-statics/3.3.2
+    dev: false
+
   registry.nlark.com/@types/prop-types/15.7.4:
     resolution: {integrity: sha1-/PcgXCXf95Xuea8eMNosl5CAjxE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/prop-types/download/@types/prop-types-15.7.4.tgz}
     name: '@types/prop-types'
     version: 15.7.4
-    dev: true
 
   registry.nlark.com/@types/react-dom/17.0.9:
     resolution: {integrity: sha1-RBqYHanXvhFwQuGm/T2sSzD1Wt0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/react-dom/download/@types/react-dom-17.0.9.tgz}
@@ -329,6 +360,17 @@ packages:
       '@types/react': registry.nlark.com/@types/react/17.0.21
     dev: true
 
+  registry.nlark.com/@types/react-redux/7.1.18:
+    resolution: {integrity: sha1-K/j9Vuuq5nmpDr/+SP9zcXxDjgQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/react-redux/download/@types/react-redux-7.1.18.tgz}
+    name: '@types/react-redux'
+    version: 7.1.18
+    dependencies:
+      '@types/hoist-non-react-statics': registry.nlark.com/@types/hoist-non-react-statics/3.3.1
+      '@types/react': registry.nlark.com/@types/react/17.0.21
+      hoist-non-react-statics: registry.nlark.com/hoist-non-react-statics/3.3.2
+      redux: registry.nlark.com/redux/4.1.1
+    dev: false
+
   registry.nlark.com/@types/react/17.0.21:
     resolution: {integrity: sha1-BpxDF3zUGa+qtc4mu06QVlSffqY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/react/download/@types/react-17.0.21.tgz}
     name: '@types/react'
@@ -337,13 +379,11 @@ packages:
       '@types/prop-types': registry.nlark.com/@types/prop-types/15.7.4
       '@types/scheduler': registry.nlark.com/@types/scheduler/0.16.2
       csstype: registry.nlark.com/csstype/3.0.9
-    dev: true
 
   registry.nlark.com/@types/scheduler/0.16.2:
     resolution: {integrity: sha1-GmL4lSVyPd4kuhsBsJK/XfitTTk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/scheduler/download/@types/scheduler-0.16.2.tgz}
     name: '@types/scheduler'
     version: 0.16.2
-    dev: true
 
   registry.nlark.com/@vitejs/plugin-react-refresh/1.3.6:
     resolution: {integrity: sha1-GYGDktsB6BdGz+sE4JarMBDnn+M=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@vitejs/plugin-react-refresh/download/@vitejs/plugin-react-refresh-1.3.6.tgz}
@@ -356,6 +396,8 @@ packages:
       '@babel/plugin-transform-react-jsx-source': registry.nlark.com/@babel/plugin-transform-react-jsx-source/7.14.5_@babel+core@7.15.5
       '@rollup/pluginutils': registry.nlark.com/@rollup/pluginutils/4.1.1
       react-refresh: registry.nlark.com/react-refresh/0.10.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/ansi-styles/3.2.1:
@@ -430,13 +472,17 @@ packages:
     resolution: {integrity: sha1-ZBCvMbJr0FIJM9AsvGT86c4/vws=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/csstype/download/csstype-3.0.9.tgz}
     name: csstype
     version: 3.0.9
-    dev: true
 
   registry.nlark.com/debug/4.3.2:
     resolution: {integrity: sha1-8KScGKyHeeMdSgxgKd+3aHPHQos=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/debug/download/debug-4.3.2.tgz}
     name: debug
     version: 4.3.2
     engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: registry.nlark.com/ms/2.1.2
     dev: true
@@ -519,6 +565,14 @@ packages:
     dependencies:
       function-bind: registry.nlark.com/function-bind/1.1.1
     dev: true
+
+  registry.nlark.com/hoist-non-react-statics/3.3.2:
+    resolution: {integrity: sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/hoist-non-react-statics/download/hoist-non-react-statics-3.3.2.tgz}
+    name: hoist-non-react-statics
+    version: 3.3.2
+    dependencies:
+      react-is: registry.nlark.com/react-is/16.13.1
+    dev: false
 
   registry.nlark.com/is-core-module/2.6.0:
     resolution: {integrity: sha1-11U7JSb+Wbkro+QMjfdX7Ipwnhk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-core-module/download/is-core-module-2.6.0.tgz}
@@ -617,6 +671,16 @@ packages:
       source-map-js: registry.nlark.com/source-map-js/0.6.2
     dev: true
 
+  registry.nlark.com/prop-types/15.7.2:
+    resolution: {integrity: sha1-UsQedbjIfnK52TYOAga5ncv/psU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/prop-types/download/prop-types-15.7.2.tgz}
+    name: prop-types
+    version: 15.7.2
+    dependencies:
+      loose-envify: registry.nlark.com/loose-envify/1.4.0
+      object-assign: registry.nlark.com/object-assign/4.1.1
+      react-is: registry.nlark.com/react-is/16.13.1
+    dev: false
+
   registry.nlark.com/react-dom/17.0.2_react@17.0.2:
     resolution: {integrity: sha1-7P+2hF462Nv83EmPDQqTlzZQLCM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/react-dom/download/react-dom-17.0.2.tgz}
     id: registry.nlark.com/react-dom/17.0.2
@@ -629,6 +693,37 @@ packages:
       object-assign: registry.nlark.com/object-assign/4.1.1
       react: registry.nlark.com/react/17.0.2
       scheduler: registry.nlark.com/scheduler/0.20.2
+    dev: false
+
+  registry.nlark.com/react-is/16.13.1:
+    resolution: {integrity: sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/react-is/download/react-is-16.13.1.tgz}
+    name: react-is
+    version: 16.13.1
+    dev: false
+
+  registry.nlark.com/react-redux/7.2.5_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-ITwbBaoRh9nJQN38CylFCVf2o7g=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/react-redux/download/react-redux-7.2.5.tgz}
+    id: registry.nlark.com/react-redux/7.2.5
+    name: react-redux
+    version: 7.2.5
+    peerDependencies:
+      react: ^16.8.3 || ^17
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
+      '@types/react-redux': registry.nlark.com/@types/react-redux/7.1.18
+      hoist-non-react-statics: registry.nlark.com/hoist-non-react-statics/3.3.2
+      loose-envify: registry.nlark.com/loose-envify/1.4.0
+      prop-types: registry.nlark.com/prop-types/15.7.2
+      react: registry.nlark.com/react/17.0.2
+      react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
+      react-is: registry.nlark.com/react-is/16.13.1
     dev: false
 
   registry.nlark.com/react-refresh/0.10.0:
@@ -646,6 +741,20 @@ packages:
     dependencies:
       loose-envify: registry.nlark.com/loose-envify/1.4.0
       object-assign: registry.nlark.com/object-assign/4.1.1
+    dev: false
+
+  registry.nlark.com/redux/4.1.1:
+    resolution: {integrity: sha1-dvHEObtCBD+YX72b8hmQ5gvWf0c=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/redux/download/redux-4.1.1.tgz}
+    name: redux
+    version: 4.1.1
+    dependencies:
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
+    dev: false
+
+  registry.nlark.com/regenerator-runtime/0.13.9:
+    resolution: {integrity: sha1-iSV0Kpj/2QgUmI11Zq0wyjsmO1I=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/regenerator-runtime/download/regenerator-runtime-0.13.9.tgz}
+    name: regenerator-runtime
+    version: 0.13.9
     dev: false
 
   registry.nlark.com/resolve/1.20.0:
