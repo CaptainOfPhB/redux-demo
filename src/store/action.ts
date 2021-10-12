@@ -8,5 +8,5 @@ const createAction = <T, P>(type: T, payload: P): Action<T, P> => ({ type, paylo
 export const PLUS = 'PLUS';
 export const MINUS = 'MINUS';
 
-export const plus = (payload: number) => createAction(PLUS, payload);
-export const minus = (payload: number) => createAction(MINUS, payload);
+export const plusAction = (payload: number) => createAction(PLUS, payload);
+export const minusAction = (payload: number) => createAction(MINUS, payload);

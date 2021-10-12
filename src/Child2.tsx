@@ -1,10 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import { Store } from './store';
+import { RootStore } from './store';
 
 function Child2() {
-  const count = useSelector<Store, number>(s => s.count);
+  const count = useSelector<RootStore, number>(s => s.count);
 
   return (
     <div className='child2'>
